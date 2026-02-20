@@ -15,7 +15,7 @@ import os
 import torch
 from transformers.cache_utils import DynamicCache
 
-DEFAULT_MODEL_PATH = os.environ.get("QWEN_TTS_MODEL", "Qwen/Qwen3-TTS-0.6B-Preview")
+DEFAULT_MODEL_PATH = os.environ.get("QWEN_TTS_MODEL", "Qwen/Qwen3-TTS-12Hz-0.6B-Base")
 
 
 class NativeTTSGenerator:

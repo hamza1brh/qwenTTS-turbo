@@ -18,7 +18,7 @@ import numpy as np
 import soundfile as sf
 
 # ── Paths ──────────────────────────────────────────────────────────────
-MODEL_PATH = os.environ.get("QWEN_TTS_MODEL", "Qwen/Qwen3-TTS-0.6B-Preview")
+MODEL_PATH = os.environ.get("QWEN_TTS_MODEL", "Qwen/Qwen3-TTS-12Hz-0.6B-Base")
 _BUNDLED_REF = os.path.join(os.path.dirname(__file__), "sample_ref.mp3")
 REF_AUDIO_PATH = os.environ.get("QWEN_TTS_REF_AUDIO", "") or _BUNDLED_REF
 REF_TEXT = "This is a reference audio sample for voice cloning"

@@ -412,7 +412,7 @@ def _extract_tts_backbone_weights(model, max_seq_len: int = 4096) -> dict:
 class TTSMegakernelGenerator:
     """High-level TTS generator using the megakernel for backbone inference."""
 
-    def __init__(self, model_path: str = "Qwen/Qwen3-TTS-0.6B-Preview",
+    def __init__(self, model_path: str = "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
                  model=None, max_seq_len: int = 4096):
         if model is None:
             from qwen_tts.inference.qwen3_tts_model import Qwen3TTSModel
@@ -493,7 +493,7 @@ if __name__ == "__main__":
     import time
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=str, default="Qwen/Qwen3-TTS-0.6B-Preview")
+    parser.add_argument("--model-path", type=str, default="Qwen/Qwen3-TTS-12Hz-0.6B-Base")
     parser.add_argument("--benchmark", action="store_true")
     parser.add_argument("--num-tokens", type=int, default=100)
     args = parser.parse_args()

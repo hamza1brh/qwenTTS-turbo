@@ -6,7 +6,7 @@ import torch
 import numpy as np
 
 
-DEFAULT_MODEL_PATH = os.environ.get("QWEN_TTS_MODEL", "Qwen/Qwen3-TTS-0.6B-Preview")
+DEFAULT_MODEL_PATH = os.environ.get("QWEN_TTS_MODEL", "Qwen/Qwen3-TTS-12Hz-0.6B-Base")
 DEFAULT_REF_AUDIO = os.environ.get("QWEN_TTS_REF_AUDIO", "")
 DEFAULT_OUTPUT_DIR = os.environ.get("QWEN_TTS_OUTPUT_DIR", os.path.join(os.getcwd(), "tts_output"))
 

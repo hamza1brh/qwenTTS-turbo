@@ -353,7 +353,7 @@ class CodePredictorMegakernelGenerator:
 if __name__ == "__main__":
     import time
 
-    MODEL_PATH = os.environ.get("QWEN_TTS_MODEL", "Qwen/Qwen3-TTS-0.6B-Preview")
+    MODEL_PATH = os.environ.get("QWEN_TTS_MODEL", "Qwen/Qwen3-TTS-12Hz-0.6B-Base")
 
     print("Initializing Code Predictor Megakernel...")
     gen = CodePredictorMegakernelGenerator(MODEL_PATH)

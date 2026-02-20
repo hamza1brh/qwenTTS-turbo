@@ -69,7 +69,7 @@ pip install -e .
 
 ```bash
 # Option A: auto-download from HuggingFace (default)
-# Nothing to do — load_model() downloads Qwen/Qwen3-TTS-0.6B-Preview automatically
+# Nothing to do — load_model() downloads Qwen/Qwen3-TTS-12Hz-0.6B-Base automatically
 
 # Option B: local checkpoint
 export QWEN_TTS_MODEL=/path/to/Qwen3-TTS-12Hz-0.6B-Base
@@ -147,7 +147,7 @@ python tests/bench_vllm.py
 
 | Env Var | Default | Description |
 |---------|---------|-------------|
-| `QWEN_TTS_MODEL` | `Qwen/Qwen3-TTS-0.6B-Preview` | Model path or HuggingFace hub ID |
+| `QWEN_TTS_MODEL` | `Qwen/Qwen3-TTS-12Hz-0.6B-Base` | Model path or HuggingFace hub ID |
 | `QWEN_TTS_REF_AUDIO` | *(bundled test audio)* | Reference audio for voice cloning |
 
 ## How It Works

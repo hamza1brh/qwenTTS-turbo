@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwentts-turbo"
+version = "0.1.0"
+description = "CUDA megakernel-accelerated inference for Qwen3-TTS — 3.75x faster, RTF 0.13"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "hamza1brh"}]
+
+dependencies = [
+    "torch>=2.5.0,<2.10",
+    "torchaudio>=2.5.0,<2.10",
+    "transformers>=4.57.0",
+    "qwen-tts>=0.1.1",
+    "soundfile>=0.12.0",
+    "numpy>=1.24.0",
+    "librosa>=0.10.0",
+    "accelerate>=1.0.0",
+    "einops>=0.7.0",
+]
+
+[project.optional-dependencies]
+demo = ["gradio>=4.0.0"]
+flash = ["flash-attn>=2.5.0"]
+
+[project.urls]
+Homepage = "https://github.com/hamza1brh/qwentts-turbo"
+Repository = "https://github.com/hamza1brh/qwentts-turbo"
+
+[tool.setuptools.packages.find]
+include = ["qwentts_turbo*"]
+
+[tool.setuptools.package-data]
+qwentts_turbo = ["csrc/*.cu", "csrc/*.cuh"]
+
+[tool.uv]
+index-strategy = "first-index"
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchaudio = { index = "pytorch-cu128" }

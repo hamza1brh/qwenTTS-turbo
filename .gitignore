@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.egg
+
+# CUDA build artifacts
+*.o
+*.so
+*.cubin
+*.fatbin
+
+# PyTorch JIT cache
+torch_extensions/
+
+# Profiling
+*.nsys-rep
+*.sqlite
+*.ncu-rep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model weights (users download separately)
+*.bin
+*.safetensors
+*.gguf
+checkpoints/
+
+# Audio outputs
+*.wav
+*.mp3
+!tests/sample_ref.mp3
+tts_output/
+
+# Virtual environments
+.venv/
+
+# Dev notes
+mydocs/

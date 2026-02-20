@@ -27,11 +27,11 @@ from qwentts_turbo.generator import NativeTTSGenerator
 _BUNDLED_REF = os.path.join(os.path.dirname(__file__), "sample_ref.mp3")
 REF_AUDIO_PATH = DEFAULT_REF_AUDIO or _BUNDLED_REF
 REF_TEXT = (
-    "They call me famous. But my fans are no longer mine."
-    "Algorithms decide who sees me. Agents decide who profits from me."
-    "The media and platforms own my voice. Not you."
-    "Hunger is temporary. Today's spotlight is tomorrow's silence."
-    "But my story deserves more than a headline."
+    "They call me famous. But my fans are no longer mine. "
+    "Algorithms decide who sees me. Agents decide who profits from me. "
+    "The media and platforms own my voice. Not you. "
+    "Hunger is temporary. Today's spotlight is tomorrow's silence. "
+    "But my story deserves more than a headline. "
     "My spirit, my love, my art, can live beyond the game."
 )
 SYNTH_TEXT = "Technology is changing the world in ways we never imagined possible."
